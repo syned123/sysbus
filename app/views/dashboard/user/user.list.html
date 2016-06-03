@@ -1,0 +1,25 @@
+<div>
+	<a ui-sref="overview" class="pull-right btn btn-primary btn-outline btn-rounded">Back to Overview</a>
+	<h2>Usuarios</h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+		<div class="container">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Apellido</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="user in ULC.users.list">
+						<td>{{user.name}}</td>
+						<td>{{user.lastname}}</td>
+						<td>{{user.username}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
