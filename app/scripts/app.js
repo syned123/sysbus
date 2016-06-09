@@ -47,14 +47,30 @@ angular
         })
         .state('reports', {
           url: '/reports',
-          parent: 'dashboard',
           templateUrl: 'views/dashboard/reports.html'
         })
+        //users
         .state('users', {
-          url: '/users',
+          url: '/usticket/newers',
           parent: 'dashboard',
           templateUrl: 'views/dashboard/user/user.list.html',
           controller: 'UserListCtrl',
-          controllerAs: 'ULC'//aqui coloca las iniciales de las palabras que use amigo
+          controllerAs: 'ULC'//aqui coloca las iniciales de las palabras 
+        })
+        .state('newuser', {
+          url: '/users/new',
+          parent: 'dashboard',
+          templateUrl: 'views/dashboard/user/user.new.html',
+          controller: 'UserNewCtrl',
+          controllerAs: 'UNC'//aqui coloca las iniciales de las palabras 
+        })
+          .state('ticket', {
+          url: '/ticket',
+          parent: 'dashboard',
+          templateUrl: 'views/dashboard/ticket/ticket.list.html',
+          controller: 'TicketListCtrl',
+          controllerAs: 'TLC'//aqui coloca las iniciales de las palabras
         });
+          
+
   });

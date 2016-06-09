@@ -1,0 +1,25 @@
+<div>
+	<a ui-sref="ticket" class="pull-right btn btn-primary btn-outline btn-rounded">Nuevo</a>
+	<h2>Vehiculo</h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+		<div class="container">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Placa</th>
+						<th>Color</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="ticket in TLC.tickets.list" ng-click="tLC.view.edit(ticket)">
+						<td>{{ticket.placa}}</td>
+						<td>{{ticket.Colour}}</td>
+						
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

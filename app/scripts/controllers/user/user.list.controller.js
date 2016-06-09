@@ -13,6 +13,7 @@ angular.module('sysbus')
     vm.$state = $state;
     console.log('list users!!')
     //aqui creas el tu lista como el de tu compu
+    //mockup de la lista de users
     vm.users = {
       list: [
 	      {
@@ -45,5 +46,10 @@ angular.module('sysbus')
 	      }
       ]
     };
+    vm.view = {
+    	edit: function(user) {
+    		console.log('edit', user)
+    	}
+    }
 
   });

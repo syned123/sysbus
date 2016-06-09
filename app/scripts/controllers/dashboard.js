@@ -15,9 +15,12 @@ angular.module('sysbus')
     vm.view = {
     	title: app_manager.title,
     	menu: [
-	    	{label: 'Overview', url: 'overview'},
-	    	{label: 'Reports', url: 'reports'},
-	    	{label: 'Usuarios', url: 'users'}
+	    	{label: 'Inicio', url: 'overview'},
+	    	{label: 'Reportes', url: 'reports'},
+	    	{label: 'Usuarios', url: 'users'},
+        {label: 'Boletos', url: 'ticket'},
+        {label: 'Vehiculo', url: 'vehicle'}
 	    ]
     };
   });
+  
