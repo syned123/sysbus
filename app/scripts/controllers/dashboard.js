@@ -18,8 +18,8 @@ angular.module('sysbus')
 	    	{label: 'Inicio', url: 'overview'},
 	    	{label: 'Reportes', url: 'reports'},
 	    	{label: 'Usuarios', url: 'users'},
-        {label: 'Boletos', url: 'ticket'},
-        {label: 'Vehiculo', url: 'vehicle'}
+        {label: 'Vehiculo', url: 'ticket'},
+        {label: 'Cliente', url: 'customer'},
 	    ]
     };
   });

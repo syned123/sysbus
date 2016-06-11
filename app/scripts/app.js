@@ -70,6 +70,13 @@ angular
           templateUrl: 'views/dashboard/ticket/ticket.list.html',
           controller: 'TicketListCtrl',
           controllerAs: 'TLC'//aqui coloca las iniciales de las palabras
+        })
+          .state('newticket', {
+          url: '/ticket/new',
+          parent: 'dashboard',
+          templateUrl: 'views/dashboard/ticket/ticket.new.html',
+          controller: 'TicketNewCtrl',
+          controllerAs: 'TNC'//aqui coloca las iniciales de las palabras
         });
           
 
