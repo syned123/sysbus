@@ -21,7 +21,7 @@ angular.module('sysbus')
         {label: 'Cliente', url: 'customer'},
         {label: 'Facturas', url: 'bill'},
         {label: 'Reportes', url: 'reports'},
-
+        {label: 'Ventas y Reservas', url: 'sales'}
 	    ]
     };
   });
