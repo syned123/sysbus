@@ -1,0 +1,25 @@
+<div>
+	<a ui-sref="newbill" class="pull-right btn btn-primary btn-outline btn-rounded">Nuevo</a>
+	<h2>Facturas</h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+		<div class="container">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Fecha</th>
+						<th>Usuario</th>
+						<th>Cliente</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="bill in BLC.bill.list" ng-click="BLC.view.edit(bill)">
+						<td>{{bill.date}}</td>
+						<td>{{bill.user}}</td>
+						<td>{{bill.customer}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

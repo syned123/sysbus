@@ -45,10 +45,6 @@ angular
           parent: 'dashboard',
           templateUrl: 'views/dashboard/overview.html'
         })
-        .state('reports', {
-          url: '/reports',
-          templateUrl: 'views/dashboard/reports.html'
-        })
         //users
         .state('users', {
           url: '/usticket/newers',
@@ -77,7 +73,41 @@ angular
           templateUrl: 'views/dashboard/ticket/ticket.new.html',
           controller: 'TicketNewCtrl',
           controllerAs: 'TNC'//aqui coloca las iniciales de las palabras
-        });
+        })
+          .state('customer', {
+          url: '/customer',
+          parent: 'dashboard',
+          templateUrl: 'views/dashboard/customer/customer.list.html',
+          controller: 'CustomerListCtrl',
+          controllerAs: 'CLC'//aqui coloca las iniciales de las palabras
+        })
+          .state('newcustomer', {
+          url: '/customer/new',
+          parent: 'dashboard',
+          templateUrl: 'views/dashboard/customer/customer.new.html',
+          controller: 'CustomerNewCtrl',
+          controllerAs: 'CNC'//aqui coloca las iniciales de las palabras
+        })
+          .state('bill', {
+          url: '/bill',
+          parent: 'dashboard',
+          templateUrl: 'views/dashboard/bill/bill.list.html',
+          controller: 'BillListCtrl',
+          controllerAs: 'BLC'//aqui coloca las iniciales de las palabras
+        })
+          .state('newbill', {
+          url: '/bill/new',
+          parent: 'dashboard',
+          templateUrl: 'views/dashboard/bill/bill.new.html',
+          controller: 'BillNewCtrl',
+          controllerAs: 'BNC'//aqui coloca las iniciales de las palabras
+        })
+          .state('reports', {
+          url: '/reports',
+          parent: 'dashboard',
+          templateUrl: 'views/dashboard/reports/reports.list.html ',
+          
+         });
           
 
   });

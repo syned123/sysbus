@@ -1,0 +1,31 @@
+<div>
+	<a ui-sref="customer" class="pull-right btn btn-primary btn-outline btn-rounded">Atr&aacute;s</a>
+	<h2>Nuevo cliente</h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+		<div class="container">
+			<form class="form-horizontal">
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" placeholder="Nombre" ng-model="CNC.customer.name">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">Apellidos</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" placeholder="apellidos" ng-model="TNC.customer.lastname">
+			    </div>
+			  </div>
+			  
+			  
+			  
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-success" ng-click="CNC.view.save()">Guardar</button>
+			    </div>
+			  </div>
+			</form>
+		</div>
+	</div>
+</div>

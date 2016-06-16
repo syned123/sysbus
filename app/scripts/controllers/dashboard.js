@@ -16,10 +16,12 @@ angular.module('sysbus')
     	title: app_manager.title,
     	menu: [
 	    	{label: 'Inicio', url: 'overview'},
-	    	{label: 'Reportes', url: 'reports'},
 	    	{label: 'Usuarios', url: 'users'},
         {label: 'Vehiculo', url: 'ticket'},
         {label: 'Cliente', url: 'customer'},
+        {label: 'Facturas', url: 'bill'},
+        {label: 'Reportes', url: 'reports'},
+
 	    ]
     };
   });

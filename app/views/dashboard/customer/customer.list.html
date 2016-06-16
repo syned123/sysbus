@@ -1,0 +1,25 @@
+<div>
+	<a ui-sref="newcustomer" class="pull-right btn btn-primary btn-outline btn-rounded">Nuevo</a>
+	<h2>Clientes</h2>
+	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
+	<div class="jumbotron">
+		<div class="container">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Apellido Paterno</th>
+						<th>CI</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="customer in CLC.customer.list" ng-click="CLC.view.edit(customer)">
+						<td>{{customer.name}}</td>
+						<td>{{customer.lastname}}</td>
+						<td>{{customer.ci}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

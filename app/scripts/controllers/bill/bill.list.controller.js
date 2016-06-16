@@ -8,26 +8,26 @@
  * Controller of sysbus
  */
 angular.module('sysbus')
-  .controller('CustomerListCtrl', function($scope, $state) {
+  .controller('BillListCtrl', function($scope, $state) {
   	var vm = this;
     vm.$state = $state;
-    console.log('list customer!!')
+    console.log('list bill!!')
     //aqui creas el tu lista como el de tu compu
     //mockup de la lista de users
-    vm.customer = {
+    vm.bill = {
       list: [
 	      {
 	        id: '001',
-	        name: 'luis',
-          lastname: 'perez lopez', 
-          ci: '10203040'
+	        date: '10/05/2016',
+          user: 'name01',
+          customer: 'luis'
         },
 	      
       ]
     };
     vm.view = {
-    	edit: function(customer) {
-    		console.log('edit', customer)
+    	edit: function(bill) {
+    		console.log('edit', bill)
     	}
     }
 
